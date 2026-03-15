@@ -1,0 +1,123 @@
+.site-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-secondary);
+  margin-top: 80px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  padding: 48px 24px 32px;
+  align-items: start;
+}
+
+/* Brand */
+.footer-brand { max-width: 300px; }
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.footer-logo span { color: var(--accent); }
+
+.footer-logo-icon {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.footer-desc {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Links */
+.footer-links { display: flex; gap: 48px; }
+
+.footer-col h4.footer-heading {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 12px;
+}
+
+.footer-col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
+
+.footer-col a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.855rem;
+  transition: color var(--transition);
+}
+
+.footer-col a:hover { color: var(--accent); }
+
+/* Bottom */
+.footer-bottom {
+  border-top: 1px solid var(--border);
+  padding: 16px 24px;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.footer-copy a { color: var(--accent); text-decoration: none; }
+.footer-copy a:hover { text-decoration: underline; }
+
+.footer-badges { display: flex; gap: 8px; flex-wrap: wrap; }
+
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 36px 20px 24px;
+  }
+  .footer-brand { max-width: 100%; }
+  .footer-links { flex-wrap: wrap; gap: 28px; }
+}
